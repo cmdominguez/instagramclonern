@@ -5,13 +5,13 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import {LightColors as Colors} from '../../Theme';
-import {ListHistory} from "../../Components/ListHistorys";
+import {HistoryList} from "../../Components/HistoryList";
 
 export const Tab1 = () => {
 
     return (
         <View style={style.container}>
-            <ListHistory/>
+            <HistoryList/>
 
         </View>
     );

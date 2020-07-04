@@ -3,7 +3,7 @@ import {FlatList, View, StyleSheet, Dimensions} from "react-native";
 import {ItemHistoyList} from "./ItemHistoryList";
 import {Colors} from "../Theme";
 
-export const ListHistory = () => {
+export const HistoryList = () => {
 
 
     const mockData = [
