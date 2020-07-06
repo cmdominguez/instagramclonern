@@ -6,12 +6,13 @@ import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import {LightColors as Colors} from '../../Theme';
 import {PostList} from "../../Components/PostList/PostList";
+import data from "../../assets/fakeData"
+
 
 export const Tab1 = () => {
-
     return (
         <View style={style.container}>
-            <PostList/>
+            <PostList data={data} />
         </View>
     );
 };

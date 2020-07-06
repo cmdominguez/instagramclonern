@@ -2,19 +2,19 @@ import React from "react";
 import {View, StyleSheet, Image, Text} from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 
-export const HeaderPost = ({title}) => {
+export const HeaderPost = ({title, profilePicture, location}) => {
 
     return (
         <View
             style={style.container}
         >
-            <Image source={{uri: 'https://via.placeholder.com/150'}} style={style.image}/>
+            <Image source={{uri: profilePicture}} style={style.image}/>
             <View style={{flex:1}}>
                 <Text style={style.usernameLabel}>
                     {title}
                 </Text>
                 <Text style={style.location}>
-                    Location
+                    {location}
                 </Text>
             </View>
             <Icon name={'ellipsis-horizontal'} style={{width: 30}} size={20}/>

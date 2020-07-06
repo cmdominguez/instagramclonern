@@ -2,7 +2,7 @@ import React from "react";
 import {View, Image, Text, StyleSheet} from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 
-export const ItemHistoyList = ({label}) => {
+export const ItemHistoyList = ({label, media}) => {
     return (
         <View
             style={style.container}
@@ -14,7 +14,7 @@ export const ItemHistoyList = ({label}) => {
                 angle={20}
             >
                 <Image
-                    source={{uri: 'https://via.placeholder.com/150'}}
+                    source={{uri: media}}
                     style={style.circleImage}
                 />
             </LinearGradient>

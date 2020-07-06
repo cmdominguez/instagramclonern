@@ -3,13 +3,13 @@ import {FlatList} from "react-native";
 import {HistoryList} from "../Histories/HistoryList";
 import {Post} from "./Post"
 
-export const PostList = () => {
+export const PostList = ({data}) => {
 
     return (
         <FlatList
-            data={[1, 1, 1, 1]}
-            renderItem={() => {
-                return <Post />
+            data={data}
+            renderItem={({item}) => {
+                return <Post post={item} />
             }}
             ListHeaderComponent={
                 <HistoryList/>

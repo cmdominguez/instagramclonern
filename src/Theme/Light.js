@@ -19,6 +19,6 @@ export const LightColors = {
     }),
     backgroundColor: Platform.select({
         ios: '#fff',
-        android: '#f2f2f2'
+        android: '#fff'
     }),
 };

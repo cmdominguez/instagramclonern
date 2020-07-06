@@ -2,14 +2,14 @@ import React from "react";
 import {Image, View, StyleSheet, Text} from "react-native"
 import Icon from "react-native-vector-icons/Ionicons"
 
-export const AddComment = () => {
+export const AddComment = ({profilePicture}) => {
     return (
         <View
             style={style.container}
         >
             <View style={{flexDirection: 'row', alignItems: 'center', flex: 1}}>
                 <Image
-                    source={{uri: 'https://via.placeholder.com/150'}}
+                    source={{uri: profilePicture}}
                     style={style.circleImage}
                 />
                 <Text style={style.textAddComment}>

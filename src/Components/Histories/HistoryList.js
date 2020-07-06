@@ -1,32 +1,21 @@
 import React from "react";
 import {FlatList, View, StyleSheet, Dimensions} from "react-native";
 import {ItemHistoyList} from "./ItemHistoryList";
+import data from "../../assets/historiesData"
+
 
 export const HistoryList = () => {
 
-
-    const mockData = [
-        {
-            username: 'Angular'
-        },
-        {
-            username: 'Ionic'
-        },
-        {
-            username: 'React'
-        }
-    ];
-
     const renderItem = ({item}) => {
         return (
-            <ItemHistoyList label={item.username}/>
+            <ItemHistoyList label={item.name} media={item.picture}/>
         );
     };
 
     return (
         <View style={style.container}>
             <FlatList
-                data={mockData}
+                data={data}
                 renderItem={renderItem}
                 keyExtractor={(item, index) => String(index)}
                 horizontal
