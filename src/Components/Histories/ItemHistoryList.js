@@ -34,17 +34,19 @@ const style = StyleSheet.create({
         marginHorizontal: 6
     },
     circleImage: {
-        width: 74,
-        height: 74,
-        borderRadius: 40,
+        width: 60,
+        height: 60,
+        borderRadius: 30,
+        borderColor: '#fff',
+        borderWidth: 3
     },
     usernameLabel: {
         marginTop: 4
     },
     borderColor: {
-        width: 80,
-        height: 80,
-        borderRadius: 40,
+        width: 66,
+        height: 66,
+        borderRadius: 34,
         justifyContent: 'center',
         alignItems: 'center'
     }

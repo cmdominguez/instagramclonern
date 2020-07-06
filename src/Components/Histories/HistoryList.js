@@ -1,7 +1,6 @@
 import React from "react";
 import {FlatList, View, StyleSheet, Dimensions} from "react-native";
 import {ItemHistoyList} from "./ItemHistoryList";
-import {Colors} from "../../Theme";
 
 export const HistoryList = () => {
 
@@ -40,9 +39,11 @@ export const HistoryList = () => {
 
 const style = StyleSheet.create({
     container: {
-        backgroundColor: Colors.light,
         maxHeight: 150,
         width: Dimensions.get('screen').width,
-        paddingVertical: 8
+        paddingVertical: 8,
+        borderBottomWidth: .5,
+        borderColor: '#ccc',
+        marginBottom: 12
     }
 });

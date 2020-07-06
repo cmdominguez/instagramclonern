@@ -5,13 +5,13 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import {LightColors as Colors} from '../../Theme';
-import {HistoryList} from "../../Components/Histories/HistoryList";
+import {PostList} from "../../Components/PostList/PostList";
 
 export const Tab1 = () => {
 
     return (
         <View style={style.container}>
-            <HistoryList/>
+            <PostList/>
         </View>
     );
 };
@@ -30,8 +30,5 @@ const style = StyleSheet.create({
         backgroundColor: Colors.backgroundColor,
         justifyContent: 'flex-start',
         alignItems: 'center'
-    },
-    text: {
-        color: Colors.textColor,
     },
 });
