@@ -1,6 +1,7 @@
 import React from "react";
 import {View, StyleSheet, Image, Text} from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
+import {Colors} from "../../Theme";
 
 export const HeaderPost = ({title, profilePicture, location}) => {
 
@@ -17,7 +18,7 @@ export const HeaderPost = ({title, profilePicture, location}) => {
                     {location}
                 </Text>
             </View>
-            <Icon name={'ellipsis-horizontal'} style={{width: 30}} size={20}/>
+            <Icon name={'ellipsis-horizontal'} style={{width: 30}} size={20} color={Colors.textColor}/>
         </View>
     );
 };
@@ -37,10 +38,11 @@ const style = StyleSheet.create({
         marginRight: 20
     },
     usernameLabel: {
-
+        color: Colors.textColor
     },
     location: {
         fontSize: 12,
-        fontWeight: '200'
+        fontWeight: '200',
+        color: Colors.textColor
     }
 });

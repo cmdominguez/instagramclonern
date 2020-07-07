@@ -2,7 +2,7 @@ import {Navigation} from 'react-native-navigation';
 
 import registerScreen from './Screens/index';
 import {SCREEN_NAMES} from './Environments';
-import {LightColors as Colors} from './Theme';
+import {Colors} from './Theme';
 
 export class App {
     constructor() {

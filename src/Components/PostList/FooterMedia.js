@@ -1,6 +1,7 @@
 import React from "react";
 import {View, StyleSheet} from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
+import {Colors} from "../../Theme";
 
 export const FooterMedia = () => {
     return (
@@ -8,11 +9,11 @@ export const FooterMedia = () => {
             style={style.container}
         >
             <View style={{flexDirection: 'row'}}>
-                <Icon name={'heart-outline'} size={25} style={{marginRight: 16}}/>
-                <Icon name={'chatbubble-outline'} size={25} style={{marginRight: 16}}/>
-                <Icon name={'send-outline'} size={25}/>
+                <Icon name={'heart-outline'} size={25} style={{marginRight: 16}} color={Colors.textColor}/>
+                <Icon name={'chatbubble-outline'} size={25} style={{marginRight: 16}} color={Colors.textColor}/>
+                <Icon name={'send-outline'} size={25} color={Colors.textColor}/>
             </View>
-            <Icon name={'bookmark-outline'} size={25}/>
+            <Icon name={'bookmark-outline'} size={25} color={Colors.textColor}/>
         </View>
     );
 };

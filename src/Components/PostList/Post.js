@@ -3,6 +3,7 @@ import {View, StyleSheet, Image, Text} from "react-native";
 import {HeaderPost} from "./HeaderPost";
 import {FooterMedia} from './FooterMedia';
 import {AddComment} from "./AddComment"
+import {Colors} from "../../Theme";
 
 export const Post = ({post}) => {
 
@@ -60,7 +61,7 @@ const style = StyleSheet.create({
     media: {
         height: 240
     },
-    likeText: {marginLeft: 6, fontSize: 14, fontWeight: '500'},
-    commentText: {marginLeft: 6, marginTop: 6, fontSize: 14, fontWeight: '500', marginRight: 6},
-    moreComments: {marginLeft: 6, marginTop: 6, fontSize: 12, fontWeight: '200'}
+    likeText: {marginLeft: 6, fontSize: 14, fontWeight: '500', color: Colors.textColor},
+    commentText: {marginLeft: 6, marginTop: 6, fontSize: 14, fontWeight: '500', marginRight: 6, color: Colors.textColor},
+    moreComments: {marginLeft: 6, marginTop: 6, fontSize: 12, fontWeight: '200', color: Colors.textColor}
 });

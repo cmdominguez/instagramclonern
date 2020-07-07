@@ -1,6 +1,7 @@
 import React from "react";
 import {View, Image, Text, StyleSheet} from "react-native";
 import LinearGradient from "react-native-linear-gradient";
+import {Colors} from "../../Theme";
 
 export const ItemHistoyList = ({label, media}) => {
     return (
@@ -20,6 +21,8 @@ export const ItemHistoyList = ({label, media}) => {
             </LinearGradient>
             <Text
                 style={style.usernameLabel}
+                numberOfLines={1}
+                ellipsizeMode='tail'
             >
                 {label}
             </Text>
@@ -41,7 +44,9 @@ const style = StyleSheet.create({
         borderWidth: 3
     },
     usernameLabel: {
-        marginTop: 4
+        marginTop: 4,
+        color: Colors.textColor,
+        maxWidth: 60
     },
     borderColor: {
         width: 66,

@@ -1,6 +1,7 @@
 import React from "react";
 import {Image, View, StyleSheet, Text} from "react-native"
 import Icon from "react-native-vector-icons/Ionicons"
+import {Colors} from "../../Theme";
 
 export const AddComment = ({profilePicture}) => {
     return (
@@ -42,6 +43,7 @@ const style = StyleSheet.create({
     },
     textAddComment: {
         fontSize: 12,
-        fontWeight: '200'
+        fontWeight: '200',
+        color: Colors.textColor
     }
 });
