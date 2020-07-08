@@ -20,7 +20,7 @@ export const Tab1 = () => {
 Tab1.options = {
     topBar: {
         title: {
-            text: 'Tab 1'
+            text: 'InstagramClone'
         },
     },
 };
