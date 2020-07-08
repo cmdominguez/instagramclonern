@@ -1,6 +1,6 @@
 import React from "react";
 import {FlatList} from "react-native";
-import {HistoryList} from "../Histories/HistoryList";
+import {StoriesList} from "../Histories/StoriesList";
 import {Post} from "./Post"
 
 export const PostList = ({data}) => {
@@ -12,7 +12,7 @@ export const PostList = ({data}) => {
                 return <Post post={item} />
             }}
             ListHeaderComponent={
-                <HistoryList/>
+                <StoriesList/>
             }
             keyExtractor={(item, index) => String(index)}
         />

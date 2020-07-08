@@ -1,14 +1,13 @@
 import React from "react";
 import {FlatList, View, StyleSheet, Dimensions} from "react-native";
-import {ItemHistoyList} from "./ItemHistoryList";
+import {ItemStoriesList} from "./ItemStoriesList";
 import data from "../../assets/historiesData"
 
-
-export const HistoryList = () => {
+export const StoriesList = () => {
 
     const renderItem = ({item}) => {
         return (
-            <ItemHistoyList label={item.name} media={item.picture}/>
+            <ItemStoriesList label={item.name} media={item.picture}/>
         );
     };
 

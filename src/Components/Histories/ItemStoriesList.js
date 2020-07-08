@@ -3,7 +3,7 @@ import {View, Image, Text, StyleSheet} from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 import {Colors} from "../../Theme";
 
-export const ItemHistoyList = ({label, media}) => {
+export const ItemStoriesList = ({label, media}) => {
     return (
         <View
             style={style.container}

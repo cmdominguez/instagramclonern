@@ -15,6 +15,10 @@ export class App {
     start = async () => {
         //Set basic colors
         Navigation.setDefaultOptions({
+            modal: {
+                swipeToDismiss: true
+            },
+            modalPresentationStyle: 'popover',
             statusBar: {
                 style: "light"
             },
